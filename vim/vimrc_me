@@ -1,0 +1,132 @@
+"""""""""""""""""""""""""""""""""from vundle example 
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
+" The following are examples of different formats supported.
+" Keep Plugin commands between vundle#begin/end.
+" plugin on GitHub repo
+"Plugin 'tpope/vim-fugitive'
+" plugin from http://vim-scripts.org/vim/scripts.html
+" Plugin 'L9'
+" Git plugin not hosted on GitHub
+"Plugin 'git://git.wincent.com/command-t.git'
+" git repos on your local machine (i.e. when working on your own plugin)
+"Plugin 'file:///home/gmarik/path/to/plugin'
+" The sparkup vim script is in a subdirectory of this repo called vim.
+" Pass the path to set the runtimepath properly.
+"Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+" Install L9 and avoid a Naming conflict if you've already installed a
+" different version somewhere else.
+" Plugin 'ascenator/L9', {'name': 'newL9'}
+
+" All of your Plugins must be added before the following line
+Plugin 'octol/vim-cpp-enhanced-highlight'
+"Bundle 'python-imports.vim'
+Bundle 'majutsushi/tagbar'
+call vundle#end()            " required
+filetype plugin indent on    " required
+" To ignore plugin indent changes, instead use:
+"filetype plugin on
+"
+" Brief help
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+"
+" see :h vundle for more details or wiki for FAQ
+" Put your non-Plugin stuff after this line
+
+
+"""""""""""""""""""""""""""""""""""""" vim-cpp-enhanced-highlight
+let g:cpp_class_scope_highlight = 1
+let g:cpp_member_variable_highlight = 1 
+let g:cpp_class_decl_highlight = 1 
+let g:cpp_concepts_highlight = 1
+let g:cpp_experimental_template_highlight = 1
+""""""""""""""""""""""""""""""""""""""tagbar
+nmap <F9> :TagbarToggle<CR> 
+let g:tagbar_autofocus = 1 
+""""""""""""""""""""""""""""""""""""""taglist 
+nmap <F3> :TlistToggle<CR>
+imap <F3> <ESC> :TlistToggle<CR>
+""""""""""""""""""""""""""""""""""""omnicppcomplete
+set nocp
+set tags+=/home/qie/workspace/cpp/LearnBoostPython/tags 
+let OmniCpp_NamespaceSearch = 1
+let OmniCpp_GlobalScopeSearch = 1
+let OmniCpp_ShowAccess = 1
+let OmniCpp_ShowPrototypeInAbbr = 1 " 显示函数参数列表
+let OmniCpp_MayCompleteDot = 1   " 输入 .  后自动补全
+let OmniCpp_MayCompleteArrow = 1 " 输入 -> 后自动补全
+let OmniCpp_MayCompleteScope = 1 " 输入 :: 后自动补全
+let OmniCpp_DefaultNamespaces = ["std", "_GLIBCXX_STD"]
+" 自动关闭补全窗口
+au CursorMovedI,InsertLeave * if pumvisible() == 0|silent! pclose|endif
+set completeopt=menuone,menu,longest
+""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""file
+filetype on
+filetype plugin on 
+filetype indent on 
+set autoread
+set autowrite 
+set confirm
+set nobackup
+set noswapfile
+set viminfo+=!
+set iskeyword+=_,$,#,@,%,-
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+""""""""""""""""""""""""""""""""""""""language
+set langmenu=en.UTF-8
+set helplang=en
+set cmdheight=2
+""""""""""""""""""""""""""""""""""""""highlight
+syntax on 
+color myob
+set cul
+"set cuc
+set go=
+set ruler 
+set showcmd
+set scrolloff=3
+set hlsearch
+set incsearch
+set laststatus=2
+""""""""""""""""""""""""""""""""""""""key map 
+"nmap yy "+yy
+"nmap <p> "+gp
+""""""""""""""""""""""""""""""""""""""common setting 
+set sw=4
+set ts=4
+set et 
+set smarttab 
+set smartindent 
+set tabstop=4
+set shiftwidth=4
+set number
+set history=1000
+set ignorecase
+set linespace=0
+set wildmenu
+set backspace=2
+set whichwrap+=<,>,h,l
+set mouse=a
+set selectmode=mouse,key
+set selection=exclusive
+set report=0
+set paste
