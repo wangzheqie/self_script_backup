@@ -25,11 +25,14 @@
 #./install.sh
 #./update.sh
 
-
+################################vim
+#git clone https://github.com/chxuan/vimplus.git ~/.vimplus
+#cd ~/.vimplus
+#sudo ./install.sh
 
 
 
 
 ################################at last 
-sudo apt-get update 
-sudo apt-get upgrade
+#sudo apt-get update 
+#sudo apt-get upgrade
