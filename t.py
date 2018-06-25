@@ -12,7 +12,7 @@ import scipy as sci
 a = 8500.0 
 b = 5852.0 
 c = a - b
-a1 = b/22 * 20
+a1 = b/22 * 21
 a2 = c/22 * 19
 print(a1, a2, a1+a2)
 print(a/23, c/23)
