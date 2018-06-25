@@ -27,11 +27,17 @@
 
 ################################vim
 #git clone https://github.com/chxuan/vimplus.git ~/.vimplus
-#cd ~/.vimplus
-#sudo ./install.sh
+cd ~/.vimplus
+sudo ./install.sh
 
 
-
+################################ibus
+#sudo apt-get install ibus-pinyin 
+#sudo apt-get install ibus ibus-clutter ibus-gtk ibus-gtk3 ibus-qt4
+#im-switch -s ibus
+#sudo apt-get install ibus-pinyin
+#/usr/lib/ibus/ibus-setup-pinyin
+#ibus-setup
 
 ################################at last 
 #sudo apt-get update 
