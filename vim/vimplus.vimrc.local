@@ -1,0 +1,12 @@
+"set relativenumber  " 开启相对行号
+imap <C-j><C-j> <ESC>I//<ESC>
+nmap <C-j><C-j> I//<ESC>
+imap <C-k><C-k> <ESC>02x
+nmap <C-k><C-k> 02x
+imap <ESC><ESC> <ESC>:w<CR>
+nmap <ESC><ESC> : :w<CR>
+imap <C-w> <ESC><C-w><C-w>
+nmap <C-w> <C-w><C-w>
+imap <F12> <ESC>:wq<CR>
+nmap <F12> :wq<CR>
+"
