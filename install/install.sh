@@ -30,6 +30,7 @@
 #git clone https://github.com/chxuan/vimplus.git ~/.vimplus
 #cd ~/.vimplus
 #sudo ./install.sh
+cp ../vim/vimplus.vimrc.local ~/.vimrc.local 
 
 
 ################################ibus
@@ -40,7 +41,10 @@
 #/usr/lib/ibus/ibus-setup-pinyin
 #ibus-setup
 
+################################fcitx 
+sudo apt-get install -y fcitx-pinyin
+
 ################################at last 
-sudo apt-get update 
-sudo apt-get upgrade
-sudo apt autoremove -y
+#sudo apt-get update 
+#sudo apt-get upgrade
+#sudo apt autoremove -y
