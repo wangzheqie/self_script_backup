@@ -20,5 +20,39 @@
 
 ## 典型案例
 
+> 计算二项式系数
+
+```c++
+#include <stdio.h>
+#define MAX 100
+int BinoCoef(int n, int k);
+int main(){
+    int n, k, result;
+    scanf("%d %d", &n, &k );
+    result = BinoCoef(n,k);
+    printf(result);
+    return 0;
+}
+int BinoCoef(int n, int k){
+    int data[MAX][MAX];
+    int i,j;
+    for(i=0;i<=n; i++){
+        for(j=0;j<=((i<K)?i:k);j++){
+            if(i==0 || i==j){
+                data[i][j] =1;
+            }else{
+                data[i][j]=data[i-1][j]+data[i-1][j-1];
+            }
+        }
+    }
+    return data[n][k];
+}
+```
 
 
+
+
+
+Reference:
+
+[cnblogs](https://www.cnblogs.com/brucemengbm/p/6875340.html)
