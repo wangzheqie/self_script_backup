@@ -1,4 +1,35 @@
 # self script backup
 
-* the code used by me, it is not use for you.
-* I backup these code in the github , so that I can record them if I need everywhere.
+##  algorithm 
+* basic computer algorithm 
+
+##  cpp 
+
+* basic cpp skill 
+
+## install 
+
+* some softs install script for linux
+
+## machine_learning 
+
+* basic machine learning algorithm 
+
+## python 
+
+* basic python skill
+
+## shell 
+
+* basic shell skill
+
+## system 
+
+* system configuration 
+
+## vim 
+* vim configuration and  skill
+
+
+
+
