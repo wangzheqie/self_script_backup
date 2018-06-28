@@ -1,8 +1,12 @@
 127.0.0.1	localhost
 127.0.1.1	qie-PC
-127.0.0.1 i.stack.imgur.com 
-127.0.0.1 ajax.googleapis.com
-127.0.0.1 google.com
+127.0.0.1   i.stack.imgur.com
+127.0.0.1   www.gravatar.com
+127.0.0.1   graph.facebook.com
+127.0.0.1   ajax.googleapis.com 
+127.0.0.1   0.gravatra.com
+127.0.0.1   1.gravatra.com
+127.0.0.1   www.google-analytics.com 
 
 # The following lines are desirable for IPv6 capable hosts
 ::1     ip6-localhost ip6-loopback
