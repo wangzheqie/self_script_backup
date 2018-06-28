@@ -9,4 +9,10 @@ imap <C-w> <ESC><C-w><C-w>
 nmap <C-w> <C-w><C-w>
 imap <F12> <ESC>:wq<CR>
 nmap <F12> :wq<CR>
+vmap <C-y> "+y
+vmap <C-p> "+p
+vmap <C-d> "+d
+nmap <leader>8 :Tab /\*<cr>
+nmap <leader>7 :Tab /&<cr>
+nmap <leader>0 :Tab /,<cr>
 "
