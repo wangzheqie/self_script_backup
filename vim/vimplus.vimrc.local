@@ -1,4 +1,6 @@
 "set relativenumber  " 开启相对行号
+imap <C-h><C-h> <ESC>I#<ESC>
+nmap <C-h><C-h> I#<ESC>
 imap <C-j><C-j> <ESC>I//<ESC>
 nmap <C-j><C-j> I//<ESC>
 imap <C-k><C-k> <ESC>02x
@@ -12,7 +14,9 @@ nmap <F12> :wq<CR>
 vmap <C-y> "+y
 vmap <C-p> "+p
 vmap <C-d> "+d
-nmap <leader>8 :Tab /\*<cr>
-nmap <leader>7 :Tab /&<cr>
 nmap <leader>0 :Tab /,<cr>
+nmap <leader>6 :Tab /><cr>
+nmap <leader>7 :Tab /&<cr>
+nmap <leader>8 :Tab /\*<cr>
+set tw=80 
 "
