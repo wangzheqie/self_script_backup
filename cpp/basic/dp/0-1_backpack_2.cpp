@@ -14,7 +14,7 @@ int main()
     std::vector<int> b(k, 0); // all value 
     std::vector<bool> is_choice(k, false);
     
-    for (int i = k; i > 0; i-- ){
+    for (int i = k; i >= 0; i-- ){
         //not choice 
         int not_choice = b[i];  
         //choice 
