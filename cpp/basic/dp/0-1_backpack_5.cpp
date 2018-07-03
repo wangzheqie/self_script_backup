@@ -14,11 +14,9 @@ int main()
     b.resize(k);
     b[k-1] = max_weight;
 
-    for(int i=k-1; i>=0; i--){
+    for(int i=0; i<k; i--){
         //not choice 
-        b[i-1] = b[i];
         //choice 
-        b[i-1] = max(b[i] + v[i] , b[i]);
     }
     std::cout << "Hello world" << std::endl;
     return 0;
