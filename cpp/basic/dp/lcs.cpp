@@ -9,8 +9,8 @@ bool same(char s1, char s2){
 }
 int main()
 {
-    string x="abcd";
-    string y="acqb";
+    string x="abcdzp";
+    string y="acqbdpp";
     int n = x.length();
     int m = y.length();
 
