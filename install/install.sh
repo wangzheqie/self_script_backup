@@ -14,7 +14,10 @@
 #mkdir ~/.config/pip
 #echo "[global]" >> ~/.config/pip/pip.conf 
 #echo "index-url = https://pypi.tuna.tsinghua.edu.cn/simple" >> ~/.config/pip/pip.conf 
-
+#sudo -H pip install --upgrade pip
+#sudo apt-get install python-tk 
+#sudo -H pip install PyOpenGL PyOpenGL_accelerate
+#sudo -H pip install ipython==5.7
 
 ################################git 
 #git config --global user.email "wangzheqie@qq.com"
