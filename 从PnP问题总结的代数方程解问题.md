@@ -150,6 +150,12 @@ $$
 
 ## Grobner  Basis Method
 
+* ​
+
+## Gauss Newton Method
+
+* expand the object function $x^TAx$ , and calculate the first , second order derivations directly
+
 
 
 

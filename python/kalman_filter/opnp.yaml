@@ -1,0 +1,11 @@
+# OPnP config
+MaxItrNum: 100
+MaxMu: 100
+MinMu: 0.01
+GreaterMuStep: 10
+LessMuStep: 0.1
+InitMu: 1.000e-8
+Dimension: 11
+initA: "initA.txt"
+initV: "initV.txt"
+initW: "initW.txt"
